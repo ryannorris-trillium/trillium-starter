@@ -56,11 +56,25 @@ See `pygame-starter/README.md`: Pygame runs in a browser tab here. Programs that
 
 ## More starters
 
-Other starting points (LÖVE/Lua, JavaScript canvas, terminal Python) live in the
-class starters repo. In the terminal, run one line and commit the new folder:
+Other starting points (Pygame, LÖVE/Lua, JavaScript canvas, terminal Python)
+live in the class starters repo. To add one to this repository:
 
-```
-bash <(curl -s https://raw.githubusercontent.com/ryannorris-trillium/trillium-starters/main/get.sh) love
-```
+1. Open a terminal: **F1** → *Terminal: Create New Terminal*.
+2. Paste this whole line (in the terminal, paste is **Ctrl+Shift+V**), then press Enter:
 
-Replace `love` with `pygame`, `web-canvas`, or `terminal-python`.
+   ```
+   bash <(curl -s https://raw.githubusercontent.com/ryannorris-trillium/trillium-starters/main/get.sh) pygame
+   ```
+
+   Replace `pygame` with `love`, `web-canvas`, or `terminal-python`. If you leave
+   the name off, it asks you which one.
+3. A new folder appears. Open its `README.md` for the two or three commands that run it.
+4. Commit the folder: Source Control → message → Commit → Sync.
+
+**Updating a starter you already have:** run the same line again. It adds any
+new starter files (for example a new `dev.sh`) and never overwrites files you
+already have, so your own edits are safe.
+
+**What that line does:** `curl -s` downloads the script `get.sh`; `bash <( … )`
+runs it straight away; the word at the end is the starter name. Only run
+`bash <(curl …)` lines from a source you know — this one is Ryan's class repo.
