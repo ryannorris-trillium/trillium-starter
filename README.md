@@ -53,3 +53,14 @@ stopping it yourself is faster and it is a good habit.
 ## Games with graphics
 
 See `pygame-starter/README.md`: Pygame runs in a browser tab here. Programs that must open their own window (Turtle, Tkinter, Java Swing) can use the **desktop** configuration instead: when creating a codespace, choose "Trillium CS Starter (with desktop)" and open port 6080 for a Linux desktop in a tab.
+
+## More starters
+
+Other starting points (LÖVE/Lua, JavaScript canvas, terminal Python) live in the
+class starters repo. In the terminal, run one line and commit the new folder:
+
+```
+bash <(curl -s https://raw.githubusercontent.com/ryannorris-trillium/trillium-starters/main/get.sh) love
+```
+
+Replace `love` with `pygame`, `web-canvas`, or `terminal-python`.
