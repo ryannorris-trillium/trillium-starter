@@ -49,3 +49,7 @@ file's tab.
 Go to github.com/codespaces, find your codespace, click the ... menu, and
 choose **Stop codespace**. It stops itself after 30 idle minutes anyway, but
 stopping it yourself is faster and it is a good habit.
+
+## Games with graphics
+
+See `pygame-starter/README.md`: Pygame runs in a browser tab here. Programs that must open their own window (Turtle, Tkinter, Java Swing) can use the **desktop** configuration instead: when creating a codespace, choose "Trillium CS Starter (with desktop)" and open port 6080 for a Linux desktop in a tab.
