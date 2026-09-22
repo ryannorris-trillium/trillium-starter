@@ -77,3 +77,21 @@ account name and the fact that a credential is needed.
   where the additional starters (`pygame`, `love`, `playdate`, `web-canvas`,
   `terminal-python`, `hunt`, `madlibs`, `showdown`) live; this repo's README
   tells students how to pull one in via `get.sh`.
+
+## Linux migration completed (2026-09-21, Ubuntu 26.04)
+
+- Cloned fresh to `~/projects/trillium-starter` with remote
+  `https://ryannorris-trillium@github.com/ryannorris-trillium/trillium-starter.git`
+  (keeps the school account as the push username).
+- No untracked files needed copying; the Windows working copy differed from
+  git only by CRLF line endings (`core.autocrlf=input` was not applied to the
+  checkout). All blobs were already LF.
+- Added `.gitattributes` (`* text=auto eol=lf`) so `dev.sh` and friends stay LF
+  even when edited from a Windows client.
+- Added `.claude/agent-memory/MEMORY.md` (new, minimal index) and a local-only
+  `.claude/settings.local.json` (gitignored) pointing autoMemoryDirectory there.
+- Validation on Linux: `bash -n pygame-starter/dev.sh` OK; both
+  `devcontainer.json` files parse as JSON; `hello.py` and
+  `pygame-starter/main.py` byte-compile and `hello.py` runs under Python 3.12
+  (via `uv`). The Codespace image itself still targets Python 3.12 — unchanged.
+- Push requires `gh auth login` as `ryannorris-trillium` (see Credential note).

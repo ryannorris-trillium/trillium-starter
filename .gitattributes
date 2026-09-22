@@ -1,0 +1,6 @@
+# Keep LF in the repo and working tree: scripts run inside Linux Codespaces.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.wav binary
+*.ogg binary
